@@ -6,7 +6,7 @@ try:
       conn = mysql.connector.connect(
             host='127.0.0.1',
             user='root',
-            password='dyts23111985'
+            password='****'
       )
 except mysql.connector.Error as err:
       if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
@@ -58,9 +58,9 @@ for tabela_nome in TABLES:
 # inserindo usuarios
 usuario_sql = 'INSERT INTO usuarios (nome, nickname, senha) VALUES (%s, %s, %s)'
 usuarios = [
-      ("shiny", "SH", "16062011"),
-      ("buguinho", "BG", "23111985"),
-      ("Luna", "LN", "170805")
+      ("***", "**", "*****"),
+      ("***", "**", "***"),
+      ("***", "**", "*****")
 ]
 cursor.executemany(usuario_sql, usuarios)
 
